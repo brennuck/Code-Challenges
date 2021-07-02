@@ -19,7 +19,7 @@ var countMatches = function(items, ruleKey, ruleValue) {
     }
     
     if (ruleKey === "color") {
-        for (let i = 0; i < items.length; i++) {
+        for (let i = 0; i < items.length; i++) {``
             if (items[i][1] === ruleValue) {
                 count += 1
             }
