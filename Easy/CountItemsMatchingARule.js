@@ -7,32 +7,33 @@
 // ruleKey == "name" and ruleValue == namei.
 // Return the number of items that match the given rule.
 
-var countMatches = function(items, ruleKey, ruleValue) {
-    let count = 0;
-    
-    if (ruleKey === "type") {
-        for (let i = 0; i < items.length; i++) {
-            if (items[i][0] === ruleValue) {
-                count += 1
-            }
-        }
-    }
-    
-    if (ruleKey === "color") {
-        for (let i = 0; i < items.length; i++) {``
-            if (items[i][1] === ruleValue) {
-                count += 1
-            }
-        }
-    }
-    
-    if (ruleKey === "name") {
-        for (let i = 0; i < items.length; i++) {
-            if (items[i][2] === ruleValue) {
-                count += 1
-            }
-        }
-    }
-    
-    return count;
+var countMatches = function (items, ruleKey, ruleValue) {
+	let count = 0;
+
+	if (ruleKey === "type") {
+		for (let i = 0; i < items.length; i++) {
+			if (items[i][0] === ruleValue) {
+				count += 1;
+			}
+		}
+	}
+
+	if (ruleKey === "color") {
+		for (let i = 0; i < items.length; i++) {
+			``;
+			if (items[i][1] === ruleValue) {
+				count += 1;
+			}
+		}
+	}
+
+	if (ruleKey === "name") {
+		for (let i = 0; i < items.length; i++) {
+			if (items[i][2] === ruleValue) {
+				count += 1;
+			}
+		}
+	}
+
+	return count;
 };
